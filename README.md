@@ -6,14 +6,10 @@ just copy rootmagic.py into your directory
 This will create run.C file and execute it. Canvases c1 and c2 will be saved and printed inside the jupyter notebook
 
 ```
-#!python
-
 import rootmagic
 ```
 
 ```
-#!python
-
 %%rootc -c c1,c2 -f run -i stdio.h
     TCanvas *c1 = new TCanvas("c1","c1",800,600);
     printf("aaaa");
